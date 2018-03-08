@@ -101,3 +101,42 @@ epidemic.
 ## Other sources
 Where can we find any research/data available/articles?
 We have data sources from the Attorney General's office in this public repo and can try and scrape other sites if we need to. DisposeMyMeds.org (community pharmacies) and Walgreens (maybe tied to CVS locations might be separate, needs to be looked into.) NYS Department of Conservation also has locations. DEA pop up sites list: takebackday.dea.gov
+
+Data Aggregation
+
+Need
+-Scrapers for all locations
+-resource list of possible dropoff site lists
+		-research
+
+Scrapers
+-run regularly, update API
+-report of what changes were made, logged where?
+
+-maybe build in delays if too many calls to their servers
+-data cleaning duplicates!
+-limit to NY state
+-list of NY zip codes
+-DCA pop up sites, April 1 first available
+
+API
+-every location
+-columns (lat/long, hours, address, type of establishment)
+-contact info, phone, website, email, etc
+-easy to add new scrapers
+-up to date
+-give source of data (url)
+-provide closest sites for entered address
+Language telling people to contact that source to update the data
+
+Pre-March 11
+
+-Set up GitHub
+-Compile resource list
+-NY zipcodes
+-Create issues for scraper and building API
+-Database host?
+	-how many read/writes?
+	-find free hosting service
+	-whatever the cap is for storage, be under it
+-Tag in Zach from AG’s Office
